@@ -200,7 +200,7 @@ function Persistent:SendMultiEmbed(embedsTable, options)
 	if type(options) == "table" then
 		if options.Content then payload.content = tostring(options.Content) end
 		if options.Username then payload.username = tostring(options.Username) end
-		if options.AvatarUrl then payload.avatar_url = tostring(options.AvatarUrl) end
+		if options.AvatarUrl then payload.avatar_url = tostring(options.AvatarUrl) end -- from my testing this doesnt worker ?
 	end
 
 	sendPayload(payload)
