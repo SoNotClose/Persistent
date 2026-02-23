@@ -6,7 +6,7 @@
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
-local Persistent = loadstring(game:HttpGet('https://raw.githubusercontent.com/SoNotClose/Persistent/main/Persistent.luau'))()
+local Persistent = loadstring(game:HttpGet('https://raw.githubusercontent.com/SoNotClose/Persistent/refs/heads/main/persistent.luau'))()
 
 Persistent:Authorize({
     Webhook = '', -- could be the raw text or from a github
